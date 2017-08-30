@@ -7,8 +7,112 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    #main{
+    margin:0px;
+    padding:0px;
+    }
+    #Nav a{
+      color: #f2f2f2;
+      text-decoration:none;
+    background-color: transparent;
+    }
+    #Nav .navbar-right a:hover {
+      border-bottom: 3px solid;
+    }
+    footer{
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      margin-bottom: 0px;	
+    }
+    #page-footer {
+      background-color: #252525;
+          color: #767778;
+      padding-top:45px;
+      padding-bottom:45px;
+    }
+    #careers{
+      background-color: #F2F2F2;
+      padding-top:45px;
+      padding-bottom:45px;
+      text-align:center;
+      font-family:calibri;
+    }
+    #header{
+      background-image:linear-gradient(rgba(0, 124, 171, 0.95), rgba(0, 124, 171, 0.95)), url(./assets/images/image.jpg);
+      background-size:100%;
+      width:100%;
+      padding-bottom:36.5%;
+      overflow:hidden;
+      
+    }
+</style>
 </head>
 <body>
-  <app-root></app-root>
+    <div id="main">
+        <header>
+          <div class="container-fluid" id="header"><br>
+              <nav class="nav">
+              <div class="container" id="Nav">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                  <span style="background-color:white;" class="icon-bar"></span>
+                  <span style="background-color:white;" class="icon-bar"></span>
+                  <span style="background-color:white;" class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse navHeaderCollapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#" style="font-size:30px;"><b>UV SOFT</b></a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><b>About</b></a></li>
+                    <li><a href="#"><b>Services</b></a></li>
+                    <li><a href="#"><b>Work</a></b></li>
+                    <li><a href="#"><b>Blog</a></b></li>
+                    <li><a href="#"><b>Careers</a></b></li>
+                    <li><a href="#"><b>Contact</a></b></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <app-root></app-root>
+        <footer>
+          <div id="careers" class="container-fluid">
+            <p style="font-size:20px;">INTERESTED IN JOINING UV SOFT SOLUTIONS?</p>
+            <p style="font-size:30px;">We’re always looking for talented, passionate, technology enthusiasts.</p>
+            <a style="font-size:20px;" class="btn btn-info" href="#"><span>Apply Now</span></a>
+          </div>
+          <div id="page-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col span_6">
+                  <!-- Footer widget area 1 -->
+                  <div id="text-2" class="widget widget_text">			
+                    <div class="textwidget">
+                      <div>
+                        <h4 style="text-align: center; font-size: 20px;">1875 Connecticut Ave NW 10th Floor Washington, DC 20009</h4>
+                      </div>
+                      <div class="social-links-footer">
+                        <center><a target="_blank" href="https://twitter.com/onebytellc" style="margin-right: 20px;"><i class="fa fa-twitter" color=""></i></a><a target="_blank" href="https://www.facebook.com/onebytellc/" style="margin-right: 20px;"><i class="fa fa-facebook"></i></a><a target="_blank" href="https://www.linkedin.com/company/onebyte-tech" style="margin-right: 20px;"><i class="fa fa-linkedin"></i></a><a target="_blank" href="https://www.instagram.com/onebytellc/" style="margin-right: 20px;"><i class="fa fa-instagram"></i> </a></center>
+                      </div>
+                      <div>
+                        <h4 style="text-align: center; font-size: 14px;">© 2016 OneByte, LLC </h4><br>
+                        <h4 style="text-align: center; font-size: 12px; line-height: 20px; margin-top: -20px">OneByte is an industry-leading technology company specializing in custom mobile apps, web apps, and games.<br>
+                        Our passion for new technology drives us and helps us to stay ahead of the curve. </h4>
+                      </div>
+                    </div>
+                  </div>				
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
 </body>
 </html>
